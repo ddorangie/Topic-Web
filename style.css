@@ -10,6 +10,7 @@ html, body {
     --text-transform: scale(1.14,1);
     --smooth-transition-background: background-color 200ms;
     --smooth-transform: transform 100ms;
+    --gradient: linear-gradient(10deg, #13547a, #7fcec6);
 }
 
 /* ШАПКА САЙТА С НАВИГАЦИЕЙ */
@@ -20,7 +21,7 @@ html, body {
     margin: 10px 10px 0px 10px;
     width: 99%;
     height: 55%;
-    background: linear-gradient(10deg, #13547a, #7fcec6)
+    background: var(--gradient);
 }
 
 .main-top-head-inside {
@@ -321,18 +322,19 @@ hr {
     height: 15px;
     padding: 5px 7px 11px 7px;
     background-color: #00b0ff;
-    position: relative;
-    left: 335px;
-    bottom: 50px;
+    position: absolute;
+    left: 87%;
+    bottom: 87%;
 }
 
 .description-web-design p {
-    position: relative;
-    bottom: 60px;
+    position: absolute;
+    top: 10%;
     color: grey;
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
+    padding: 10px 10px 10px 0px;
 }
 
 .description-web-design img {
@@ -369,20 +371,22 @@ hr {
 }
 
 .gradient-finance {
-    position: relative;
-    bottom: 494px;
-    right: 40px;
-    background: linear-gradient(10deg, #15567b, #7fcec6);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: var(--gradient);
     filter: opacity(80%);
-    width: 115%;
-    height: 123%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 
 .content-1 {
     color: white;
-    position: relative;
-    bottom: 253%;
+    position: absolute;
+    top: 0;
+    width: 85%;
+    /* padding: 0px 50px 10px 10px; */
 }
 
 .content-1 h2 {
@@ -398,22 +402,23 @@ hr {
     height: 15px;
     padding: 5px 7px 11px 7px;
     background-color: #536dfe;
-    position: relative;
-    left: 530px;
-    bottom: 50px;
+    position: absolute;
+    left: 100%;
+    bottom: 30%;
 }
 
 .content-1 p {
     font-size: 22px;
-    position: relative;
-    bottom: 60px;
+    position: absolute;
+    top: 50px;
     font-weight: 280;
     line-height: 33px;
+    padding: 0;
 }
 
 .content-2 {
-    position: relative;
-    bottom: 990px;
+    position: absolute;
+    top: 45%;
 }
 
 .content-2 button {
@@ -423,57 +428,61 @@ hr {
     border: none;
     font-size: 20px;
     color: white;
-    background-color: #7fcec6;
-    transition: background-color 200ms;
+    background-color: var(--light-blue-color);
+    transition: var(--smooth-transition-background);
 }
 
 .content-2 button:hover {
     cursor: pointer;
-    background-color: #13547a;
+    background-color: var(--dark-blue-color);
 }
 
 .content-3 {
     display: flex;
-    position: relative;
-    bottom: 880px;
+    position: absolute;
+    bottom: 20px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .content-3 button {
     position: relative;
-    top: 4px;
     margin: 20px 0 0 20px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
     border: none;
-    background-color: #7fcec6;
-    transition: background-color 200ms;
+    background-color: var(--light-blue-color);
+    transition: var(--smooth-transition-background);
 }
 
 .content-3 button:hover {
     cursor: pointer;
-    background-color: #13547a;
+    background-color: var(--dark-blue-color);
 }
 
-.logo-img {
+.logo-pic {
     margin-top: 5px;
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
 }
 
 #content-3-flag {
     position: relative;
-    left: 290px;
-    top: 30px;
+    left: 295px;
+    top: 25px;
     border-radius: 0%;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    fill: white;
+    transition: fill 200ms;
 }
 
-.content-3 img:hover {
+#content-3-flag:hover {
     cursor: pointer;
+    fill: var(--light-blue-color);
+    transition: fill 200ms;
 }
 
 .third-section-test {
