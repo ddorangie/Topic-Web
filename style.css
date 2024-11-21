@@ -1,0 +1,488 @@
+html, body {
+    font-family: 'Rotunda';
+    margin: 0;
+    height: 100%;
+}
+
+:root {
+    --dark-blue-color: #13547a;
+    --light-blue-color: #7fcec6;
+}
+
+.main-top-container {
+    margin: 10px 10px 0px 10px;
+    width: 99%;
+    height: 55%;
+    background: linear-gradient(10deg, #13547a, #7fcec6)
+}
+
+.main-top-head-inside {
+    position:fixed;
+    display: flex;
+    justify-content:center;
+    width: 99%;
+    height: 80px;
+    transition: background-color 0.3s;
+}
+
+.main-top-head-inside.fixed {
+    background-color: var(--light-blue-color);
+    position: fixed;
+}
+
+.logo-left {
+    display: flex;
+}
+
+.logo-left:hover {
+    cursor: pointer;
+}
+
+#logo-pic {
+    width: 30px;
+    height: 30px;
+    padding: 20px 15px 0 0;
+}
+
+.top-title h1{
+    margin-top: 14px;
+    font-size: 30px;
+    transform: scale(1.15,1);
+}
+
+.top-main-sections {
+    display: flex;
+    padding: 15px 300px 0px 80px;
+    color: white;
+    cursor: default;
+}
+
+.top-main-sections p:hover {
+    cursor: pointer;
+    color: var(--dark-blue-color);
+    transition: color 200ms;
+}
+
+.top-main-sections p {
+    display: inline;
+    margin: 0;
+    padding: 15px 25px 0 25px;
+    transition: color 200ms;
+    font-weight: 350;
+    font-size: 13px;
+    transform: scale(1.2,1);
+}
+
+#pages-p {
+    padding-right: 10px;
+}
+
+.pages-arrow {
+    display: flex;
+}
+
+#arrow {
+    padding: 0px 0px 17px 0px;
+    width: 20px;
+    fill: white;
+    transition: fill 200ms;
+}
+
+#home-p {
+    color: var(--dark-blue-color);
+}
+
+.pages-arrow:hover #arrow {
+    cursor: pointer;
+    fill: var(--dark-blue-color);
+}
+
+.pages-arrow:hover p {
+    cursor: pointer;
+    color: var(--dark-blue-color);
+}
+
+.submenu {
+    border-radius: 10px;
+    position: absolute;
+    right: 580px;
+    bottom: 720px;
+    background-color: white;
+    width: 160px;
+    height: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 300ms ease, opacity 300ms ease, visibility 0s 0.3s;
+}
+
+.submenu ul {
+    padding: 15px 15px 15px 20px;
+    color: grey;
+    list-style-type: none;
+    line-height: 33px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.submenu a:hover {
+    color: var(--dark-blue-color);
+}
+
+.submenu ul a {
+    color: grey;
+    text-decoration: none;
+}
+
+.submenu-arrow {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 73px;
+    left: 20px;
+}
+
+.pages-arrow:hover .submenu {
+    opacity: 1;
+    transform: translate(0px, -25px);
+    visibility: visible;
+    transition: transform 300ms ease, opacity 300ms ease;
+}
+
+.account-logo {
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    background-color:rgb(255, 255, 255);
+    transition: background-color 300ms;
+}
+
+#acc-logo {
+    fill: var(--dark-blue-color);
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    transition: fill 300ms;
+}
+
+.account-logo:hover {
+    background-color: var(--dark-blue-color);
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+.account-logo:hover #acc-logo {
+    fill: white;
+    transition: fill 300ms;
+}
+
+hr {
+    position: fixed;
+    top: 82px;
+    width: 99%;
+    height: 1px;
+    border: none;
+    background-color: var(--light-blue-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-top-title {
+    margin: 4% 0 0 34%;
+}
+
+.main-top-title h1 {
+    color: white;
+    font-size: 60px; 
+}
+
+.main-top-title p {
+    color: #13547a;
+    font-size: 25px;
+    font-weight: 500;
+    margin: -40px 0 25px 80px;
+}
+
+.main-block-input {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.form-search input {
+    color: grey;
+    width: 900px;
+    height: 80px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 0 200px 0 80px;
+    border: none;
+}
+
+.form-search input:focus {
+    outline: none;
+}
+
+.search-img {
+    width: 27px;
+    height: auto;
+    position: relative;
+    top: 7px;
+    left: 70px;
+}
+
+.cross-button {
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 36%;
+    top: 35%;
+    display: none;
+}
+
+.cross-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25px;
+}
+
+.search-button {
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    position: relative;
+    right: 166px;
+    border: none;
+    font-size: 23px;
+    color: white;
+    background-color: #7fcec6;
+    transition: background-color 200ms;
+}
+
+.search-button:hover {
+    background-color: #13547a;
+    transition: background-color 200ms;
+    cursor: pointer;
+}
+
+.first-main-description {
+    background: #7fcec6;
+    width: 99%;
+    height: 50%;
+    margin: 0px 10px 0 10px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.description-web-design {
+    padding: 1% 100px 0 30px;
+    position:relative;
+    bottom: 100px;
+    width: 15%;
+    height: 96%;
+    background-color: white;
+    border-radius: 20px;
+    transition: transform 100ms;
+}
+
+.description-web-design:hover {
+    cursor: pointer;
+    transform: translate(0px, -7px);
+    transition: transform 100ms;
+}
+
+.description-web-design h2 {
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.number-14 {
+    border-radius: 20%;
+    font-size: 13px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    padding: 7px;
+    background-color: #00b0ff;
+    position: relative;
+    left: 335px;
+    bottom: 50px;
+}
+
+.description-web-design p {
+    position: relative;
+    bottom: 60px;
+    color: grey;
+    font-size: 23px;
+    font-weight: 280;
+    line-height: 30px;
+}
+
+.description-web-design img {
+    position: relative;
+    bottom: 70px;
+    width: 345px;
+    height: auto;
+}
+
+.description-finance {
+    padding: 40px 40px 40px 40px;
+    position: relative;
+    left: 20px;
+    bottom: 100px;
+    width: 550px;
+    height: 370px;
+    background-color: white;
+    border-radius: 20px;
+    transition: transform 100ms;
+}
+
+.description-finance:hover {
+    transform: translate(0px, -7px);
+    transition: transform 100ms;
+}
+
+.finance-main-img {
+    position: relative;
+    bottom: 40px;
+    right: 40px;
+    width: 630px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.gradient-finance {
+    position: relative;
+    bottom: 494px;
+    right: 40px;
+    background: linear-gradient(10deg, #15567b, #7fcec6);
+    filter: opacity(80%);
+    width: 630px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.content-1 {
+    color: white;
+    position: relative;
+    bottom: 253%;
+}
+
+.content-1 h2 {
+    font-size: 25px;
+}
+
+.number-25 {
+    border-radius: 20%;
+    font-size: 13px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    padding: 7px;
+    background-color: #536dfe;
+    position: relative;
+    left: 530px;
+    bottom: 50px;
+}
+
+.content-1 p {
+    font-size: 22px;
+    position: relative;
+    bottom: 60px;
+    font-weight: 280;
+    line-height: 33px;
+}
+
+.content-2 {
+    position: relative;
+    bottom: 990px;
+}
+
+.content-2 button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: #7fcec6;
+    transition: background-color 200ms;
+}
+
+.content-2 button:hover {
+    cursor: pointer;
+    background-color: #13547a;
+}
+
+.content-3 {
+    display: flex;
+    position: relative;
+    bottom: 880px;
+    color: white;
+    font-size: 25px;
+}
+
+.content-3 button {
+    position: relative;
+    top: 4px;
+    margin: 20px 0 0 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7fcec6;
+    transition: background-color 200ms;
+}
+
+.content-3 button:hover {
+    cursor: pointer;
+    background-color: #13547a;
+}
+
+.logo-img {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#content-3-flag {
+    position: relative;
+    left: 290px;
+    top: 30px;
+    border-radius: 0%;
+    width: 30px;
+    height: 30px;
+}
+
+.content-3 img:hover {
+    cursor: pointer;
+}
+
+.third-section-test {
+    height: 100%;
+}
