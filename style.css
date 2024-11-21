@@ -7,10 +7,16 @@ html, body {
 :root {
     --dark-blue-color: #13547a;
     --light-blue-color: #7fcec6;
-    --text-transform: scale(1.15,1);
+    --text-transform: scale(1.14,1);
+    --smooth-transition-background: background-color 200ms;
+    --smooth-transform: transform 100ms;
 }
 
+/* ШАПКА САЙТА С НАВИГАЦИЕЙ */
+
 .main-top-container {
+    display: flex;
+    justify-content:center;
     margin: 10px 10px 0px 10px;
     width: 99%;
     height: 55%;
@@ -19,16 +25,18 @@ html, body {
 
 .main-top-head-inside {
     position:fixed;
+    left: 10px;
     display: flex;
     justify-content:center;
     width: 99%;
     height: 80px;
-    transition: background-color 0.3s;
+    transition: var(--smooth-transition-background);
 }
 
 .main-top-head-inside.fixed {
     background-color: var(--light-blue-color);
     position: fixed;
+    z-index: 1000;
 }
 
 .logo-left {
@@ -161,7 +169,7 @@ html, body {
     min-height: 40px;
     min-width: 40px;
     background-color:white;
-    transition: background-color 300ms;
+    transition: var(--smooth-transition-background);
 }
 
 #acc-logo {
@@ -174,7 +182,7 @@ html, body {
 
 .account-logo:hover {
     background-color: var(--dark-blue-color);
-    transition: background-color 300ms;
+    transition: var(--smooth-transition-background);
     cursor: pointer;
 }
 
@@ -194,42 +202,36 @@ hr {
     z-index: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ОГЛАВЛЕНИЕ С ПОИСКОМ */
 
 .main-top-title {
-    margin: 4% 0 0 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-top-title h1 {
+    flex-wrap: wrap;
+    position: absolute;
+    top: 16%;
+    margin: 0;
     color: white;
     font-size: 60px; 
+    transform: var(--text-transform);
 }
 
 .main-top-title p {
-    color: #13547a;
+    position: absolute;
+    top: 23%;
+    color: var(--dark-blue-color);
     font-size: 25px;
-    font-weight: 500;
-    margin: -40px 0 25px 80px;
+    font-weight: 400;
 }
 
 .main-block-input {
-    display: flex;
-    justify-content: center;
-    margin-left: 100px;
+    position: absolute;
+    left: 27%;
+    top: 34%;
 }
 
 .form-search input {
@@ -246,56 +248,42 @@ hr {
     outline: none;
 }
 
-.search-img {
-    width: 27px;
+#search-pic {
+    width: 33px;
     height: auto;
-    position: relative;
-    top: 7px;
-    left: 70px;
-}
-
-.cross-button {
-    background-color: white;
-    border: none;
-    width: 30px;
-    height: 30px;
     position: absolute;
-    right: 36%;
-    top: 35%;
-    display: none;
-}
-
-.cross-img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 25px;
+    top: 22px;
+    left: 30px;
 }
 
 .search-button {
     width: 150px;
     height: 60px;
     border-radius: 50px;
-    position: relative;
-    right: 166px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
     border: none;
     font-size: 23px;
     color: white;
-    background-color: #7fcec6;
-    transition: background-color 200ms;
+    background-color: var(--light-blue-color);
+    transition: var(--smooth-transition-background);
 }
 
 .search-button:hover {
-    background-color: #13547a;
-    transition: background-color 200ms;
+    background-color: var(--dark-blue-color);
+    transition: var(--smooth-transition-background);
     cursor: pointer;
 }
 
+/* БЛОКИ С ОПИСАНИЕМ */
+
 .first-main-description {
-    background: #7fcec6;
+    background: var(--light-blue-color);
     width: 99%;
     height: 50%;
     margin: 0px 10px 0 10px;
+    padding-top: 20px;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
     display: flex;
@@ -304,25 +292,25 @@ hr {
 }
 
 .description-web-design {
-    padding: 1% 100px 0 30px;
-    position:relative;
+    padding: 5px 100px 0 30px;
+    position: relative;
     bottom: 100px;
     width: 15%;
     height: 96%;
     background-color: white;
     border-radius: 20px;
-    transition: transform 100ms;
+    transition: var(--smooth-transform);
 }
 
 .description-web-design:hover {
     cursor: pointer;
     transform: translate(0px, -7px);
-    transition: transform 100ms;
+    transition: var(--smooth-transform);
 }
 
 .description-web-design h2 {
     font-size: 25px;
-    font-weight: 550;
+    font-weight: 400;
 }
 
 .number-14 {
@@ -331,7 +319,7 @@ hr {
     color: white;
     width: 15px;
     height: 15px;
-    padding: 7px;
+    padding: 5px 7px 11px 7px;
     background-color: #00b0ff;
     position: relative;
     left: 335px;
@@ -342,16 +330,16 @@ hr {
     position: relative;
     bottom: 60px;
     color: grey;
-    font-size: 23px;
-    font-weight: 280;
+    font-size: 20px;
+    font-weight: 300;
     line-height: 30px;
 }
 
 .description-web-design img {
-    position: relative;
-    bottom: 70px;
-    width: 345px;
-    height: auto;
+    position: absolute;
+    bottom: 0px;
+    width: 85%;
+    height: 50%;
 }
 
 .description-finance {
@@ -359,24 +347,24 @@ hr {
     position: relative;
     left: 20px;
     bottom: 100px;
-    width: 550px;
-    height: 370px;
+    width: 29%;
+    height: 79%;
     background-color: white;
     border-radius: 20px;
-    transition: transform 100ms;
+    transition: var(--smooth-transform);
 }
 
 .description-finance:hover {
     transform: translate(0px, -7px);
-    transition: transform 100ms;
+    transition: var(--smooth-transform);
 }
 
 .finance-main-img {
-    position: relative;
-    bottom: 40px;
-    right: 40px;
-    width: 630px;
-    height: 450px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -386,8 +374,8 @@ hr {
     right: 40px;
     background: linear-gradient(10deg, #15567b, #7fcec6);
     filter: opacity(80%);
-    width: 630px;
-    height: 450px;
+    width: 115%;
+    height: 123%;
     border-radius: 20px;
 }
 
@@ -399,6 +387,7 @@ hr {
 
 .content-1 h2 {
     font-size: 25px;
+    font-weight: 400;
 }
 
 .number-25 {
@@ -407,7 +396,7 @@ hr {
     color: white;
     width: 15px;
     height: 15px;
-    padding: 7px;
+    padding: 5px 7px 11px 7px;
     background-color: #536dfe;
     position: relative;
     left: 530px;
