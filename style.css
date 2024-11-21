@@ -7,6 +7,7 @@ html, body {
 :root {
     --dark-blue-color: #13547a;
     --light-blue-color: #7fcec6;
+    --text-transform: scale(1.15,1);
 }
 
 .main-top-container {
@@ -47,7 +48,7 @@ html, body {
 .top-title h1{
     margin-top: 14px;
     font-size: 30px;
-    transform: scale(1.15,1);
+    transform: var(--text-transform);
 }
 
 .top-main-sections {
@@ -70,7 +71,7 @@ html, body {
     transition: color 200ms;
     font-weight: 350;
     font-size: 13px;
-    transform: scale(1.2,1);
+    transform: var(--text-transform);
 }
 
 #pages-p {
@@ -102,6 +103,13 @@ html, body {
     color: var(--dark-blue-color);
 }
 
+.pages-arrow:hover .submenu {
+    opacity: 1;
+    transform: translate(0px, -25px);
+    visibility: visible;
+    transition: transform 300ms ease, opacity 300ms ease;
+}
+
 .submenu {
     position: fixed;
     top: 110px;
@@ -110,19 +118,20 @@ html, body {
     width: 160px;
     height: 90px;
     z-index: 2;
-    /* opacity: 0;
-    visibility: hidden; */
     transition: transform 300ms ease, opacity 300ms ease, visibility 0s 0.3s;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .submenu ul {
-    padding: 15px 15px 15px 20px;
+    padding: 15px 15px 15px 25px;
     color: grey;
     list-style-type: none;
     line-height: 33px;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     margin-top: 0px;
+    transform: var(--text-transform);
 }
 
 .submenu a:hover {
@@ -144,13 +153,6 @@ html, body {
     left: 15px;
 }
 
-.pages-arrow:hover .submenu {
-    opacity: 1;
-    transform: translate(0px, -25px);
-    visibility: visible;
-    transition: transform 300ms ease, opacity 300ms ease;
-}
-
 .account-logo {
     margin-top: 20px;
     border-radius: 50%;
@@ -158,7 +160,7 @@ html, body {
     width: 40px;
     min-height: 40px;
     min-width: 40px;
-    background-color:rgb(255, 255, 255);
+    background-color:white;
     transition: background-color 300ms;
 }
 
