@@ -103,15 +103,15 @@ html, body {
 }
 
 .submenu {
+    position: fixed;
+    top: 110px;
     border-radius: 10px;
-    position: absolute;
-    right: 580px;
-    bottom: 720px;
     background-color: white;
     width: 160px;
     height: 90px;
-    opacity: 0;
-    visibility: hidden;
+    z-index: 2;
+    /* opacity: 0;
+    visibility: hidden; */
     transition: transform 300ms ease, opacity 300ms ease, visibility 0s 0.3s;
 }
 
@@ -141,7 +141,7 @@ html, body {
     transform: rotate(45deg);
     position: absolute;
     bottom: 73px;
-    left: 20px;
+    left: 15px;
 }
 
 .pages-arrow:hover .submenu {
@@ -183,11 +183,13 @@ html, body {
 
 hr {
     position: fixed;
+    right: 9px;
     top: 82px;
     width: 99%;
     height: 1px;
     border: none;
     background-color: var(--light-blue-color);
+    z-index: 1;
 }
 
 
