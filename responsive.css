@@ -3,4 +3,31 @@
         background-color: blue;
     }
     
+    .top-main-sections {
+        padding: 15px 150px 0px 80px;
+    }
+
+    .form-search input {
+        width: 750px;  
+    }
+
+    .description-web-design {
+        margin-top: 20px;
+        width: 230px;
+    }
+    
+    .description-finance {
+        position: relative;
+        width: 450px;
+        margin-top: 20px;
+    }
+
+    .content-2 button {
+       margin-top: 20px;
+    }
+
+    #content-3-flag {
+        left: 200px;
+    }
 }
+
