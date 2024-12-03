@@ -1,5 +1,3 @@
-
-
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.main-top-head-inside');
     if (window.scrollY > 0) {
