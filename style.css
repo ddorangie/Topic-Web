@@ -4,6 +4,17 @@ html, body {
     height: 100%;
 }
 
+hr {
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: var(--light-blue-color);
+    z-index: 1;
+}
+
 :root {
     --dark-blue-color: #13547a;
     --light-blue-color: #7fcec6;
@@ -55,7 +66,7 @@ html, body {
 }
 
 .top-title h1{
-    margin-top: 14px;
+    margin-top: 19px;
     font-size: 30px;
     transform: var(--text-transform);
 }
@@ -192,17 +203,6 @@ html, body {
     transition: fill 300ms;
 }
 
-hr {
-    position: absolute;
-    right: 0px;
-    top: 70px;
-    width: 100%;
-    height: 1px;
-    border: none;
-    background-color: var(--light-blue-color);
-    z-index: 1;
-}
-
 /* ОГЛАВЛЕНИЕ С ПОИСКОМ */
 
 .main-top-title {
@@ -326,7 +326,7 @@ hr {
     color: white;
     width: 15px;
     height: 15px;
-    padding: 5px 7px 11px 7px;
+    padding: 7px;
     background-color: #00b0ff;
     position: absolute;
     left: 87%;
@@ -387,14 +387,14 @@ hr {
     border-radius: 20px;
 }
 
-.content-1 {
+.description-finance-text {
     color: white;
     position: absolute;
     top: 0;
     width: 85%;
 }
 
-.content-1 h2 {
+.description-finance-text h2 {
     font-size: 25px;
     font-weight: 400;
 }
@@ -405,14 +405,14 @@ hr {
     color: white;
     width: 15px;
     height: 15px;
-    padding: 5px 7px 11px 7px;
+    padding: 7px 7px 7px 7px;
     background-color: #536dfe;
     position: absolute;
     left: 100%;
-    bottom: 30%;
+    bottom: 23%;
 }
 
-.content-1 p {
+.description-finance-text p {
     font-size: 22px;
     position: absolute;
     top: 50px;
@@ -421,12 +421,12 @@ hr {
     padding: 0;
 }
 
-.content-2 {
+.button-learn {
     position: absolute;
     top: 45%;
 }
 
-.content-2 button {
+.button-learn button {
     width: 150px;
     height: 50px;
     border-radius: 50px;
@@ -437,12 +437,12 @@ hr {
     transition: var(--smooth-transition-background);
 }
 
-.content-2 button:hover {
+.button-learn button:hover {
     cursor: pointer;
     background-color: var(--dark-blue-color);
 }
 
-.content-3 {
+.buttons-share-social-media {
     display: flex;
     position: absolute;
     bottom: 20px;
@@ -451,7 +451,7 @@ hr {
     font-weight: 300;
 }
 
-.content-3 button {
+.buttons-share-social-media button {
     position: relative;
     margin: 20px 0 0 20px;
     width: 35px;
@@ -462,7 +462,7 @@ hr {
     transition: var(--smooth-transition-background);
 }
 
-.content-3 button:hover {
+.buttons-share-social-media button:hover {
     cursor: pointer;
     background-color: var(--dark-blue-color);
 }
@@ -473,7 +473,7 @@ hr {
     height: 17px;
 }
 
-#content-3-flag {
+#description-finance-flag {
     position: relative;
     left: 295px;
     top: 25px;
@@ -484,7 +484,7 @@ hr {
     transition: fill 200ms;
 }
 
-#content-3-flag:hover {
+#description-finance-flag:hover {
     cursor: pointer;
     fill: var(--light-blue-color);
     transition: fill 200ms;
